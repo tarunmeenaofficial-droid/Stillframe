@@ -1,0 +1,34 @@
+Stillframe troubleshooting
+
+The window title says Stillframe. If you see a compile error about lastGood, you opened an old file. Download Stillframe-3.zip and run that Stillframe.bat.
+
+Start
+1. Unzip the download.
+2. Right-click Stillframe.bat, open Properties, and tick Unblock if you see it.
+3. Double-click it. If Windows warns you, choose More info, then Run anyway.
+4. Leave it running. Closing the window hides it by the clock. Exit is on that icon.
+
+Use
+- Click a program, then press Ctrl+Y. That window minimizes and the desktop shows. The program is not closed.
+- Open Stillframe. Click the name, then Restore.
+- Ctrl+Shift+Y opens Stillframe.
+- Change shortcuts in Settings. A shortcut needs a modifier, such as Ctrl+Y.
+- If Ctrl+Y is already used by another program, Stillframe switches to Ctrl+Shift+Y and says so.
+
+Copy and paste
+- Ctrl+C and Ctrl+V are the normal Windows clipboard. Stillframe does not take those keys.
+- Clipboard history is off until you turn it on in Settings. It stays on this PC. Clear deletes it.
+- Images in history are only a note. Copy the image again from the program that had it.
+
+If a window will not come forward
+- Windows sometimes blocks focus changes. Click the window on the taskbar.
+- If the other program is running as admin, use Restart as admin on the Stillframe tray menu.
+
+What it cannot do
+- It minimizes for real. Some games and sites notice that and pause or throttle. Stillframe does not close them, and it does not inject into them.
+- Exclusive fullscreen may ignore minimize. Use a borderless window.
+- It cannot control every special window, such as the desktop itself or a protected lock screen.
+
+Build from source, optional
+- On a Windows PC with the .NET 8 SDK: dotnet build Stillframe.csproj
+- You do not need the SDK to run Stillframe.bat.
